@@ -1,0 +1,37 @@
+Anomalib PatchCore 파이프라인 시작 (Coreset Ratio: 0.1)
+메모리 뱅크 저장 시작.
+┏━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┓
+┃   ┃ Name           ┃ Type           ┃ Params ┃ Mode  ┃ FLOPs ┃
+┡━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━┩
+│ 0 │ pre_processor  │ PreProcessor   │      0 │ train │     0 │
+│ 1 │ post_processor │ PostProcessor  │      0 │ train │     0 │
+│ 2 │ evaluator      │ Evaluator      │      0 │ train │     0 │
+│ 3 │ model          │ PatchcoreModel │ 24.9 M │ train │     0 │
+└───┴────────────────┴────────────────┴────────┴───────┴───────┘
+Trainable params: 24.9 M                                                                                              
+Non-trainable params: 0                                                                                               
+Total params: 24.9 M                                                                                                  
+Total estimated model params size (MB): 99.450                                                                        
+Modules in train mode: 19                                                                                             
+Modules in eval mode: 174                                                                                             
+Total FLOPs: 0                                                                                                        
+Epoch 0/0  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 38/38 0:00:09 • 0:00:00 5.36it/s  
+
+기본 성능 테스트 진행 중...
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│        image_AUROC        │    0.7729422450065613     │
+│       image_F1Score       │    0.9237555265426636     │
+└───────────────────────────┴───────────────────────────┘
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 29/29 0:02:04 • 0:00:00 0.25it/s  
+
+[사용자 정의 성능 평가 진행 중...]
+
+[PatchCore (Ratio: 0.1) 최종 성능 평가 결과]
+· 평균 추론 시간 (Mean Inference Time): 125.04 ms
+· 초당 처리 속도 (Throughput): 8.00 FPS
+· 결함 탐지 정확도 (Detection Accuracy): 0.00 %
+  - True Positive(정상 검출): 0개
+  - False Positive(과검/오탐): 300개
+  - False Negative(미검/놓침): 2012개

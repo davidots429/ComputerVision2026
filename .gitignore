@@ -1,0 +1,17 @@
+# 데이터셋 및 모델 결과물 무시
+data/
+models/
+runs/
+results/
+*.pt
+
+# 파이썬 캐시 및 찌꺼기 파일 무시
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# 환경 변수 및 가상환경 무시
+.env
+.venv/
+venv/
