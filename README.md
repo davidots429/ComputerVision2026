@@ -269,6 +269,6 @@ PatchCore
 [1] 데이터셋: DeepPCB [https://github.com/tangsanli5201/DeepPCB](https://github.com/tangsanli5201/DeepPCB)  
 [2] YOLO11 구조 image : [https://www.researchgate.net/figure/The-model-structure-of-YOLO11s_fig4_396730982](https://www.researchgate.net/figure/The-model-structure-of-YOLO11s_fig4_396730982)  
 [3] Glenn Jocher, & Jing Qiu (2024). Ultralytics YOLO11 (Version 11.0.0) [Computer software]. Available: [https://github.com/ultralytics/ultralytics](https://github.com/ultralytics/ultralytics)  
-[4] [CVPR 2022] PatchCore : Towards Total Recall in Industrial Anomaly Detection
+[4] [CVPR 2022] PatchCore : Towards Total Recall in Industrial Anomaly Detection  
 [5] PatchCore : [https://anomalib.readthedocs.io/en/v2.0.0/markdown/guides/reference/models/image/patchcore.html](https://anomalib.readthedocs.io/en/v2.0.0/markdown/guides/reference/models/image/patchcore.html)  
 [6] OpenCV : [https://github.com/opencv/opencv](https://github.com/opencv/opencv)  
